@@ -11,7 +11,7 @@ app.use(metricsMiddleware);
 
 app.get("/user", async (req, res) => {
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await new Promise((resolve) => setTimeout(resolve, Math.random() * 2500));
     res.send({
         name: "John Doe",
         age: 25,

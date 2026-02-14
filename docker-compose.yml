@@ -9,7 +9,7 @@ services:
       - monitoring
 
   prometheus:
-    image: prom/prometheus:latest
+    image: prom/prometheus:latest 
     volumes:
       - ./:/etc/prometheus
     ports:
@@ -28,3 +28,4 @@ services:
 
 networks:
   monitoring:
+ 
